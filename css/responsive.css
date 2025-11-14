@@ -1,4 +1,4 @@
-body {
-    background-color: aliceblue;
-    color: aquamarine;
-}
+/* Small devices ( up to 600px wide) */
+@media (max-width: 600px){
+
+}/*end Small devices ( up to 600px wide) */
