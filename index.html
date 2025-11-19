@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./css/responsive.css"/>
+    <script src="./js/btn-recipes.js"></script>
     <script src="./js/api.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/btn-responsive.js"></script>
     <link rel="icon" href="./assets/images/favicon.png"/>
     <title>Best Food</title>
 
@@ -14,6 +17,321 @@
 </head>
 <body>
  <!--everything begins here --> 
-    <div class="container"></div><!--end container-->
+<div class="container">
+    <header>
+
+    <div class="logoup"><img src="./assets/images/logo.png" alt="hola soy yo" width="158" height="45"></div>
+    <div class="logoup2"><img src="./assets/images/logo.png" alt="hola soy yo" width="158" height="45"></div>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" >Home</a>
+  <a href="#box-top5">Top5Best</a>
+  <a href="#reci">Recipes</a>
+  <a href="#contacto">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunctionbtn()">
+    <i class="fa fa-bars"></i></a>
+</div><!--end topnav-mytopnav-->
+
+
+<!--btn-form-->
+ <!-- este es el boton para hacer que aparezca el pop up -->
+     <div class="demo-content">
+         <button class="register-btn" onclick="openModal()">Log in / Register</button>
+    </div>
+
+    <!-- este da la funcion para que se cierre el pop up -->
+    <div class="modal-overlay" id="subscriptionModal">
+     <div class="modal-container">
+        <button class="close-btn" onclick="closeModal()"></button>
+        
+         <form id="registrationForm">
+        <div>
+        <label id="usernameLabel" for="username">Username:</label>
+        <input type="text" id="username" name="username" class="cajanombre" placeholder="Enter your name"required />
+      </div>
+
+      <div>
+        <label id="cartaemail" for="email">User email:</label >
+        <input type="email" id="email"  name="email" class="cajanombre" placeholder="Enter your email address"required />
+      </div>
+
+      <div>
+        <label for="pass1">Password:</label>
+        <input type="password" id="pass1" name="pass1" class="cajanombre" placeholder="Enter your Password" required />
+      </div>
+
+      <div>
+        <label for="pass2">Confirm Password:</label>
+        <input type="password" id="pass2" name="pass2" class="cajanombre"  placeholder="Enter your password"required/>
+       </div>
+
+       <div>
+        <fieldset>
+          <legend>Gender:</legend>
+          <input type="radio" id="genderMale" name="gender" value="Male" required/>
+          <label for="genderMale" style="display: inline-block; font-weight: normal" >Male</label>
+          <br />
+          <input type="radio" id="genderFemale" name="gender" value="Female" />
+          <label for="genderFemale" style="display: inline-block; font-weight: normal">Female</label>
+          <br />
+          <input type="radio" id="genderOther" name="gender" value="Other" />
+          <label for="genderOther" style="display: inline-block; font-weight: normal"  >Other</label >
+        </fieldset>
+      </div>
+
+      <div>
+        <input type="submit"  class="submit-btn" value="Register" />
+      </div>
+         </form>
+    </header><!--end header-->
+
+<div class="box-text-welcome">
+    <div class="img-box-text-welcome">
+        <img src="./assets/images/imgWelcome.png" alt="img text-welcome" width="450px">
+    </div>
+    <div class="text-welcome">
+    <h1>WE ARE</h1>
+<h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod eaque quia fugit a! Aut tempora ut 
+accusantium provident obcaecati voluptatibus sunt ullam repudiandae, excepturi quam iste labore ipsum fuga?
+accusantium provident obcaecati voluptatibus sunt ullam repudiandae, excepturi quam iste labore ipsum fuga?
+accusantium provident obcaecati voluptatibus sunt ullam repudiandae, excepturi quam iste labore ipsum fuga?</h3>
+</div><!--end text-welcome-->
+</div><!--end box-text-welcome-->
+
+<div id="box-top5">
+
+<div class="top5title">
+    <h1>THE TOP 5 OF THE WEEK</h1>
+</div><!--end top5title-->
+
+    <div class="box-five">
+        <div class="img-boxfive">
+        <img src="./assets/images/img-top5.png" alt="img topfive" >
+    </div>
+    <div class="container-infotop5">
+    <div class="box-textfive"><h3>jhvskdhbskjdbskdsdsdbvksdjbsjdsvjahdvajhdsvajhvjashvjahdvajhasdavjdsvjahdvajhdsvajhvjashvjahdvajhasdavv</h3>
+</div><!--end box-textfive--> 
+ <div class="info-boxfive">
+<h3>Italian <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span></h3>
+<div class="btn-more"><a href="#homes" >More</a></div>
+ </div> <!--end info-boxfive--> 
+ </div> <!--end container-infotop5--> 
+</div><!--end box five--> 
+
+    <div class="box-five">
+        <div class="img-boxfive">
+        <img src="./assets/images/img-top5.png" alt="img topfive">
+    </div>
+    <div class="container-infotop5">
+    <div class="box-textfive"><h3>jhvskdhbskjdbskdsdsdbvksdjbsjdsvjahdvajhdsvajhvjashvjahdvajhasdavjdsvjahdvajhdsvajhvjashvjahdvajhasdavv</h3>
+</div><!--end box-textfive--> 
+ <div class="info-boxfive">
+<h3>Chilena <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span></h3>
+ <div class="btn-more"><a href="#homes" >More</a></div>
+ </div> <!--end info-boxfive--> 
+ </div> <!--end container-infotop5--> 
+
+</div><!--end box five--> 
+
+ <div class="box-five">
+        <div class="img-boxfive">
+        <img src="./assets/images/img-top5.png" alt="img topfive">
+    </div>
+    <div class="container-infotop5">
+    <div class="box-textfive"><h3>jhvskdhbskjdbskdsdsdbvksdjbsjdsvjahdvajhdsvajhvjashvjahdvajhasdavjdsvjahdvajhdsvajhvjashvjahdvajhasdavv</h3>
+</div><!--end box-textfive--> 
+ <div class="info-boxfive">
+<h3>Chilena <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span></h3>
+<div class="btn-more"><a href="#homes">More</a></div>
+ </div> <!--end info-boxfive--> 
+ </div> <!--end container-infotop5--> 
+ 
+</div><!--end box five--> 
+
+ <div class="box-five">
+        <div class="img-boxfive">
+        <img src="./assets/images/img-top5.png" alt="img topfive">
+    </div>
+    <div class="container-infotop5">
+    <div class="box-textfive"><h3>jhvskdhbskjdbskdsdsdbvksdjbsjdsvjahdvajhdsvajhvjashvjahdvajhasdavjdsvjahdvajhdsvajhvjashvjahdvajhasdavv</h3>
+</div><!--end box-textfive--> 
+ <div class="info-boxfive">
+<h3>Chilena <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span></h3>
+<div class="btn-more"><a href="#homes">More</a></div>
+ </div> <!--end info-boxfive--> 
+ 
+ </div> <!--end container-infotop5--> 
+</div><!--end box five--> 
+
+
+ <div class="box-five">
+        <div class="img-boxfive">
+        <img src="./assets/images/img-top5.png" alt="img topfive">
+    </div>
+    <div class="container-infotop5">
+    <div class="box-textfive"><h3>jhvskdhbskjdbskdsdsdbvksdjbsjdsvjahdvajhdsvajhvjashvjahdvajhasdavjdsvjahdvajhdsvajhvjashvjahdvajhasdavv</h3>
+</div><!--end box-textfive--> 
+ <div class="info-boxfive">
+<h3>Chilena <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span></h3>
+<div class="btn-more"><a href="#homes">More</a></div>
+ </div> <!--end info-boxfive--> 
+ </div> <!--end container-infotop5--> 
+</div><!--end box five--> 
+
+<div class="box-five">
+<div class="img-boxfive">
+<img src="./assets/images/img-top5.png" alt="img topfive">
+</div>
+<div class="container-infotop5">
+<div class="box-textfive"><h3>jhvskdhbskjdbskdsdsdbvksdjbsjdsvjahdvajhdsvajhvjashvjahdvajhasdavjdsvjahdvajhdsvajhvjashvjahdvajhasdavv</h3>
+</div><!--end box-textfive--> 
+ <div class="info-boxfive">
+<h3>Chilena <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span></h3>
+<div class="btn-more"><a href="#home">More</a></div>
+ </div> <!--end info-boxfive--> 
+ </div> <!--end container-infotop5--> 
+</div><!--end box five--> 
+</div><!--end box-top5-->
+
+
+<div id="reci"></div><!--only to call the btn-->
+<div class="box-recipes-title">
+<h2>RECIPES</h2>
+</div>
+<div class="box-button">
+<button1 onclick="getlacomidaDeMama(1)"></button1>
+<button2 onclick="getlacomidaDeMama(2)"></button2>
+<button3 onclick="getlacomidaDeMama(3)"></button3>
+<button4 onclick="getlacomidaDeMama(4)"></button4>
+<button5 onclick="getlacomidaDeMama(5)"></button5>
+<button6 onclick="getlacomidaDeMama(9)"></button6>
+</div><!--end box-button-->
+
+<div id="containerreceta">
+<div class="text1">
+<div class="logito">
+<img src="./assets/images/icon.png" alt="hola soy yo" width="30" height="30">
+</div><!--end logito-->
+
+
+
+<p id="output"></p>
+<div class="pasos1">
+<p id="output3"></p>
+</div>
+<p id="output2"></p>
+<p id="output4"></p>
+<div id="output7"></div>
+<div class="gallery">
+    <img src="./assets/images/img-empanada.png" alt="ese soy yo mirando a la camara" >
+</div><!--end gallery-->
+</div><!--end-text1-->
+<div class="gallery2">
+    <img src="./assets/images/imgWelcome.png" alt="ese soy yo mirando a la camara" width="500px" >
+</div><!--end gallery2-->
+</div><!--end container receta-->
+
+<div class="box-button2">
+<button1 onclick="getlacomidaDeMama(1)"></button1>
+<button2 onclick="getlacomidaDeMama(2)"></button2>
+<button3 onclick="getlacomidaDeMama(3)"></button3>
+<button4 onclick="getlacomidaDeMama(4)"></button4>
+<button5 onclick="getlacomidaDeMama(5)"></button5>
+<button6 onclick="getlacomidaDeMama(9)"></button6>
+</div><!--end box-button2-->
+
+<div id="contacto"></div><!--only to call the buttom-->
+<div class="modal-container2">
+    <div class="bepart-box">
+    <p>Be part of our community</p>
+</div><!--end bepart-box-->
+ <form id="registrationForm">
+        <div>
+        <label id="usernameLabel" for="username">Username:</label>
+        <input type="text" id="username" name="username" class="cajanombre2" placeholder="Enter your name"required />
+      </div>
+
+      <div>
+        <label id="cartaemail" for="email">User email:</label >
+        <input type="email" id="email"  name="email" class="cajanombre2" placeholder="Enter your email address"required />
+      </div>
+
+      <div>
+        <label for="pass1">Password:</label>
+        <input type="password" id="pass1" name="pass1" class="cajanombre2" placeholder="Enter your Password" required />
+      </div>
+
+      <div>
+        <label for="pass2">Confirm Password:</label>
+        <input type="password" id="pass2" name="pass2" class="cajanombre2"  placeholder="Enter your password"required/>
+       </div>
+
+       <div>
+        <fieldset>
+          <legend>Gender:</legend>
+          <input type="radio" id="genderMale" name="gender" value="Male" required/>
+          <label for="genderMale" style="display: inline-block; font-weight: normal" >Male</label>
+          <br />
+          <input type="radio" id="genderFemale" name="gender" value="Female" />
+          <label for="genderFemale" style="display: inline-block; font-weight: normal">Female</label>
+          <br />
+          <input type="radio" id="genderOther" name="gender" value="Other" />
+          <label for="genderOther" style="display: inline-block; font-weight: normal"  >Other</label >
+        </fieldset>
+      </div>
+
+      <div>
+        <input type="submit"  class="submit-btn" value="Register" />
+      </div>
+         </form>
+         </div><!--end modal container2-->
+
+
+         <div class="grid-container-footer">
+<footer>
+    <div class="follow"><img src="./assets/images/logofollow.png" alt="imgfollow" width="65px" height="65px"></div>
+    <div class="follow2"><img src="./assets/images/logofollow2.png" alt="imgfollow" width="90px" height="90px"></div>
+
+    <a href="https://youtu.be/LqxJBYADqIo?si=dRGG0_cckEEGqv9F" target="_blank">
+        <div class="youtub"><img src="./assets/images/youtubebtn.png" alt="imgfollow" width="40px" height="40px"></div>
+        <div class="youtub2"><img src="./assets/images/youtubebtn2.png" alt="imgfollow" width="60px" height="60px"></div>
+    </a>
+   <!-- <a href="https://youtu.be/LqxJBYADqIo?si=dRGG0_cckEEGqv9F" target="_blank"><button>try this recipe</button></a>-->
+    <dic class="designby"><p>Design by Christian Soto</p>
+    
+        
+  
+</footer>
+
+
+  </div>
+
+</div>
+</div>
+    </div><!--end container-->
 </body>
 </html>
