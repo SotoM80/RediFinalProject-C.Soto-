@@ -1,7 +1,7 @@
 function getlacomidaDeMama(id){
 
-if (id == 1){
-fetch ('https://dummyjson.com/recipes/1')
+
+fetch ('https://dummyjson.com/recipes/' + id)
 
 .then(Response => Response.json())
 .then ((data) => { console.log(data.name, data.ingredients, data.instructions, data.prepTimeMinutes,  data.image );
@@ -13,9 +13,9 @@ document.getElementById("output7").innerHTML =  data.image;
  })
     .catch(error => { // Correctly place .catch() at the end of the promise chain
         console.error("Error fetching recipes:", error);
-    });} 
+    });
     
-    if (id == 2){
+    /*if (id == 2){
 
     fetch ('https://dummyjson.com/recipes/2')
 
@@ -77,5 +77,7 @@ document.getElementById("output3").innerHTML =  'Instrucciones:<br> ' + data.ins
 document.getElementById("output4").innerHTML = 'Temperatura: ' + data.prepTimeMinutes + ' Minutos';
  });
 
+}*/
 }
-}
+
+getlacomidaDeMama(1)
