@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/responsive.css"/>
     <script src="./js/btn-recipes.js"></script>
     <script src="./js/api.js"></script>
-    <script src="./js/main.js"></script>
+    
     <script src="./js/btn-responsive.js"></script>
     <link rel="icon" href="./assets/images/favicon.png"/>
     <title>Best Food</title>
@@ -16,6 +16,8 @@
     <title>Document</title>
 </head>
 <body>
+
+
  <!--everything begins here --> 
 <div class="container">
     <header>
@@ -89,6 +91,7 @@
     <div class="img-box-text-welcome">
         <img src="./assets/images/imgWelcome.png" alt="img text-welcome" width="450px">
     </div>
+    
     <div class="text-welcome">
     <h1>WE ARE</h1>
 <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod eaque quia fugit a! Aut tempora ut 
@@ -101,7 +104,7 @@ accusantium provident obcaecati voluptatibus sunt ullam repudiandae, excepturi q
 <div id="box-top5">
 
 <div class="top5title">
-    <h1>THE TOP 5 OF THE WEEK</h1>
+    <h1>RECIPES</h1>
 </div><!--end top5title-->
 
     <div class="box-five">
@@ -220,15 +223,18 @@ accusantium provident obcaecati voluptatibus sunt ullam repudiandae, excepturi q
 
 <div id="reci"></div><!--only to call the btn-->
 <div class="box-recipes-title">
-<h2>RECIPES</h2>
+<h2>THE TOP 6 OF THE WEEK</h2>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati dolores doloribus. <br>
+  Voluptas mollitia beatae sequi cum exercitationem molestias quae perferendis alias <br>sunt, ut ipsa, 
+  nihil nobis praesentium corporis cumque!</p>
 </div>
 <div class="box-button">
-<button1 onclick="getlacomidaDeMama(1)"></button1>
-<button2 onclick="getlacomidaDeMama(2)"></button2>
-<button3 onclick="getlacomidaDeMama(3)"></button3>
-<button4 onclick="getlacomidaDeMama(4)"></button4>
-<button5 onclick="getlacomidaDeMama(5)"></button5>
-<button6 onclick="getlacomidaDeMama(9)"></button6>
+<button id="btn-comida-1" onclick="getlacomidaDeMama(1)"></button1>
+<button id="btn-comida-2" onclick="getlacomidaDeMama(2)"></button2>
+<button id="btn-comida-3" onclick="getlacomidaDeMama(3)"></button3>
+<button id="btn-comida-4" onclick="getlacomidaDeMama(4)"></button4>
+<button id="btn-comida-5" onclick="getlacomidaDeMama(5)"></button5>
+<button id="btn-comida-6" onclick="getlacomidaDeMama(9)"></button6>
 </div><!--end box-button-->
 
 <div id="containerreceta">
@@ -246,22 +252,24 @@ accusantium provident obcaecati voluptatibus sunt ullam repudiandae, excepturi q
 <p id="output2"></p>
 <p id="output4"></p>
 <div id="output7"></div>
+
 <div class="gallery">
     <img src="./assets/images/img-empanada.png" alt="ese soy yo mirando a la camara" >
 </div><!--end gallery-->
 </div><!--end-text1-->
-<div class="gallery2">
-    <img src="./assets/images/imgWelcome.png" alt="ese soy yo mirando a la camara" width="500px" >
+
+<div id="output8" class="gallery2">
+    <!--<img src="./assets/images/imgWelcome.png" alt="ese soy yo mirando a la camara" width="500px" >-->
 </div><!--end gallery2-->
 </div><!--end container receta-->
 
 <div class="box-button2">
-<button1 onclick="getlacomidaDeMama(1)"></button1>
-<button2 onclick="getlacomidaDeMama(2)"></button2>
-<button3 onclick="getlacomidaDeMama(3)"></button3>
-<button4 onclick="getlacomidaDeMama(4)"></button4>
-<button5 onclick="getlacomidaDeMama(5)"></button5>
-<button6 onclick="getlacomidaDeMama(9)"></button6>
+<button id="btn-comida-1" onclick="getlacomidaDeMama(1)"></button1>
+<button id="btn-comida-2" onclick="getlacomidaDeMama(2)"></button2>
+<button id="btn-comida-3" onclick="getlacomidaDeMama(3)"></button3>
+<button id="btn-comida-4" onclick="getlacomidaDeMama(4)"></button4>
+<button id="btn-comida-5" onclick="getlacomidaDeMama(5)"></button5>
+<button id="btn-comida-6" onclick="getlacomidaDeMama(9)"></button6>
 </div><!--end box-button2-->
 
 <div id="contacto"></div><!--only to call the buttom-->
@@ -310,6 +318,36 @@ accusantium provident obcaecati voluptatibus sunt ullam repudiandae, excepturi q
          </form>
          </div><!--end modal container2-->
 
+<div class="team-box">
+  <h2>RECIPES</h2>
+<div id="box-caja-d">
+    
+
+<button id="firstchef" onclick="getElementById('demo').innerHTML ='<h3>nombre:</h3> '+ perfiles[0].nombre + '<br>' + '<h3>Edad: </h3>'+ perfiles[0].edad + '<br>' + '<h3>Ciudad:</h3> '+ perfiles[0].ciudad + '<br>' + '<h3>informacion:</h3> '+ perfiles[0].descripcion +'<img src=&quot;' + perfiles[0].imageURl + '&quot; alt=&quot;Foto de perfil&quot; style=&quot;width:200px;&quot;>' "><div id="firstbtnImg"><img src="./assets/images/chef1.png" alt="img chef1" width="100px"></div></button>
+<button id="firstchef" onclick="getElementById('demo2').innerHTML ='nombre: '+ perfiles[1].nombre + '<br>' + 'Edad: '+ perfiles[1].edad + '<br>' + 'Ciudad: '+ perfiles[1].ciudad + '<br>' + 'informacion: '+ perfiles[1].descripcion +'<img src=&quot;' + perfiles[1].imageURl + '&quot; alt=&quot;Foto de perfil&quot; style=&quot;width:200px;&quot;>'"><div id="firstbtnImg"><img src="./assets/images/chef1.png" alt="img chef1" width="100px"></div></button>
+<button id="firstchef" onclick="getElementById('demo3').innerHTML ='nombre: '+ perfiles[2].nombre + '<br>' + 'Edad: '+ perfiles[2].edad + '<br>' + 'Ciudad: '+ perfiles[2].ciudad + '<br>' + 'informacion: '+ perfiles[2].descripcion +'<img src=&quot;' + perfiles[2].imageURl + '&quot; alt=&quot;Foto de perfil&quot; style=&quot;width:200px;&quot;>'"><div id="firstbtnImg"><img src="./assets/images/chef1.png" alt="img chef1" width="100px"></div></button>
+<button id="firstchef" onclick="getElementById('demo4').innerHTML ='nombre: '+ perfiles[3].nombre + '<br>' + 'Edad: '+ perfiles[3].edad + '<br>' + 'Ciudad: '+ perfiles[3].ciudad + '<br>' + 'informacion: '+ perfiles[3].descripcion +'<img src=&quot;' + perfiles[3].imageURl + '&quot; alt=&quot;Foto de perfil&quot; style=&quot;width:200px;&quot;>' "><div id="firstbtnImg"><img src="./assets/images/chef1.png" alt="img chef1" width="100px"></div></button>
+</div><!--fin box-caja-d-->
+
+<div class="boxinfo-chef">
+<div class="cajademo">
+<p id="demo" >
+<div id="imagen">
+</div></p>
+</div>
+<div class="cajademo">
+<p id="demo2" ></p>
+</div>
+<div class="cajademo">
+<p id="demo3"></p>
+</div>
+<div class="cajademo">
+<p id="demo4" ></p>
+</div>
+  </div> <!--end boxinfo-chef--> 
+  
+
+</div>
 
          <div class="grid-container-footer">
 <footer>
@@ -333,5 +371,7 @@ accusantium provident obcaecati voluptatibus sunt ullam repudiandae, excepturi q
 </div>
 </div>
     </div><!--end container-->
+    <script src="./js/main.js"></script>
+    <script src="./js/dom.js"></script>
 </body>
 </html>
