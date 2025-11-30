@@ -1,10 +1,10 @@
 const perfiles = [
   {
-   nombre: "Ana",
+   nombre: "Robert",
     edad: 30,
-    ciudad: "Madrid",
+    ciudad: "New York",
     descripcion: "nacido en lalal con  hfhhfhshfhhsfh kfsjfjjf uhdbfsuhbfushbush",
-    imageURl: './assets/images/yo.jpeg'
+    imageURl: './assets/images/chef1.png'
     
   
   },
@@ -14,7 +14,7 @@ const perfiles = [
     edad: 25,
     ciudad: "Barcelona",
     descripcion: "nacido en lalal con  hfhhfhshfhhsfh kfsjfjjf uhdbfsuhbfushbush",
-    imageURl: './assets/images/yo.jpeg'
+    imageURl: './assets/images/chef2.png'
 
   },
   {
@@ -23,15 +23,15 @@ const perfiles = [
     edad: 28,
     ciudad: "Valencia",
     descripcion: "nacido en lalal con  hfhhfhshfhhsfh kfsjfjjf uhdbfsuhbfushbush",
-    imageURl: './assets/images/yo.jpeg'
+    imageURl: './assets/images/chef3.png'
   },
   {
      
-    nombre: "manuel",
+    nombre: "Valeria",
     edad: 28,
     ciudad: "Valencia",
     descripcion: "nacido en lalal con  hfhhfhshfhhsfh kfsjfjjf uhdbfsuhbfushbush",
-    imageURl: './assets/images/yo.jpeg'
+    imageURl: './assets/images/chef4.png'
   }
 ];
 
@@ -39,3 +39,5 @@ perfiles.forEach(perfil => {
 console.log(`Nombre: ${perfil.nombre}, Edad: ${perfil.edad}, Ciudad: ${perfil.ciudad}, imagen: ${perfil.imagen}`);
 
 });
+
+
