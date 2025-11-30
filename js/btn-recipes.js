@@ -1,83 +1,31 @@
+
+
 function getlacomidaDeMama(id){
 
 
 fetch ('https://dummyjson.com/recipes/' + id)
 
 .then(Response => Response.json())
-.then ((data) => { console.log(data.name, data.ingredients, data.instructions, data.prepTimeMinutes,  data.image );
-document.getElementById("output").innerHTML = data.name;
+.then ((data) => { console.log(data.name,data, data.ingredients, data.instructions, data.prepTimeMinutes,  data.image );
+document.getElementById("output").innerHTML = '<b>Dish:</b> ' + data.name;
 document.getElementById("output2").innerHTML = '<b>Ingredientes:</b><br> ' + data.ingredients;
-document.getElementById("output3").innerHTML =  'Instrucciones:<br> ' + data.instructions;
-document.getElementById("output4").innerHTML = 'Temperatura: ' + data.prepTimeMinutes + ' Minutos';
-document.getElementById("output7").innerHTML =  data.image;
+document.getElementById("output3").innerHTML =  '<b>Instrucciones:</b><br> ' + data.instructions;
+document.getElementById("output4").innerHTML = '<b>Temperatura:</b> ' + data.prepTimeMinutes + ' Minutos';
+
+//document.getElementsByClassName("gallery2")[0].innerHTML =  `<img src=${data.image} width="500px">`;
+document.getElementById("output8").innerHTML =  `<img src=${data.image} width="400px">`;
+document.getElementById("output9").innerHTML =  `<img src=${data.image} width="300px">`;
  })
     .catch(error => { // Correctly place .catch() at the end of the promise chain
         console.error("Error fetching recipes:", error);
     });
     
-    /*if (id == 2){
-
-    fetch ('https://dummyjson.com/recipes/2')
-
-.then(Response => Response.json())
-.then ((data) => { console.log(data.name, data.ingredients, data.instructions, data.prepTimeMinutes );
-document.getElementById("output").innerHTML = data.name;
-document.getElementById("output2").innerHTML = '<b>Ingredientes:</b><br> ' + data.ingredients;
-document.getElementById("output3").innerHTML =  'Instrucciones:<br> ' + data.instructions;
-document.getElementById("output4").innerHTML = 'Temperatura: ' + data.prepTimeMinutes + ' Minutos';
- })
-    .catch(error => { // Correctly place .catch() at the end of the promise chain
-        console.error("Error fetching recipes:", error);
-    });}
-
-      if (id == 3){
-
-    fetch ('https://dummyjson.com/recipes/3')
-
-.then(Response => Response.json())
-.then ((data) => { console.log(data.name, data.ingredients, data.instructions, data.prepTimeMinutes );
-document.getElementById("output").innerHTML = data.name;
-document.getElementById("output2").innerHTML = '<b>Ingredientes:</b><br> ' + data.ingredients;
-document.getElementById("output3").innerHTML =  'Instrucciones:<br> ' + data.instructions;
-document.getElementById("output4").innerHTML = 'Temperatura: ' + data.prepTimeMinutes + ' Minutos';
- });
-}    if (id == 4){
-
-    fetch ('https://dummyjson.com/recipes/4')
-
-.then(Response => Response.json())
-.then ((data) => { console.log(data.name, data.ingredients, data.instructions, data.prepTimeMinutes );
-document.getElementById("output").innerHTML = data.name;
-document.getElementById("output2").innerHTML = '<b>Ingredientes:</b><br> ' + data.ingredients;
-document.getElementById("output3").innerHTML =  'Instrucciones:<br> ' + data.instructions;
-document.getElementById("output4").innerHTML = 'Temperatura: ' + data.prepTimeMinutes + ' Minutos';
- });
+   
 }
- if (id == 5){
 
-    fetch ('https://dummyjson.com/recipes/5')
+     
 
-.then(Response => Response.json())
-.then ((data) => { console.log(data.name, data.ingredients, data.instructions, data.prepTimeMinutes);
-document.getElementById("output").innerHTML = data.name;
-document.getElementById("output2").innerHTML = '<b>Ingredientes:</b><br> ' + data.ingredients;
-document.getElementById("output3").innerHTML =  'Instrucciones:<br> ' + data.instructions;
-document.getElementById("output4").innerHTML = 'Temperatura: ' + data.prepTimeMinutes + ' Minutos';
-
- });
-} if (id == 6){
-
-    fetch ('https://dummyjson.com/recipes/6')
-
-.then(Response => Response.json())
-.then ((data) => { console.log(data.name, data.ingredients, data.instructions, data.prepTimeMinutes );
-document.getElementById("output").innerHTML = data.name;
-document.getElementById("output2").innerHTML = '<b>Ingredientes:</b><br> ' + data.ingredients;
-document.getElementById("output3").innerHTML =  'Instrucciones:<br> ' + data.instructions;
-document.getElementById("output4").innerHTML = 'Temperatura: ' + data.prepTimeMinutes + ' Minutos';
- });
-
-}*/
-}
 
 getlacomidaDeMama(1)
+
+
