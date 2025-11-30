@@ -1,5 +1,5 @@
 /* Small devices ( up to 600px wide) */
-@media (max-width: 600px){
+@media (max-width: 640px){
         .container {
         width: 100%;
         background-color: rgb(255, 255, 255);
@@ -81,12 +81,12 @@
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
-    
-  }
+}
 
   /*  button que da la accion */
 
@@ -248,8 +248,8 @@ display: none;
         }
 
     .box-text-welcome h3{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
+    font-family:"Lato", sans-serif;
+    font-size: 17px;
     font-weight: 300;
     color: #151515;
     line-height: normal;
@@ -257,7 +257,7 @@ display: none;
 
 
     .box-text-welcome h1{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:"Lato", sans-serif;
     font-size: 20px;
     font-weight: 500;
     color:#ff6666;
@@ -395,7 +395,7 @@ margin-bottom: 20px;
 }
 
 .top5title h1{
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-family:"Lato", sans-serif;
 font-size: 20px;
 font-weight: 500;
 color:#ff6666;
@@ -448,25 +448,38 @@ line-height: normal;
         margin: 0px 0px;
         padding: 0px 0px;
         line-height: 1.4em;
-        font-family: "Nunito Sans", sans-serif;
+        font-family: "Lato", sans-serif;
         text-decoration: none;
 
     }
 
     .gallery {
         width: 100%;
-        
+       
+        background-color:#04AA6D;
     }
 
      .gallery img{
         
         position: absolute;
         margin-top: 20px;
-        margin-left: 60px;
+        
+         margin-left: 60px;
+        margin-right: auto;
 
     
         
     }
+
+    #output9 img {
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 15px;
+    border-color:#f2f1f1 ;
+    
+    
+    
+}
 
 .gallery2 {
 display: none;
@@ -504,7 +517,7 @@ display: none;
 
          .box-recipes-title h2 {
            font-size: 30px;
-           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-family: "Lato", sans-serif;
            font-weight: 500;
            color:#ff6666;
            
@@ -516,6 +529,7 @@ display: none;
     flex-direction:row;
     width: 100%;
     height: 92px;
+    
     justify-content: space-between;
     align-content: flex-start;
     margin-bottom: 15px;
@@ -524,63 +538,77 @@ display: none;
     
 } 
 
-button1 {
+
+.box-button2{
+    display: none;
+
+    
+} 
+
+#btn-comida-1 {
     display: inline;
     background-image:url("/assets/images/btn-italian.png") ;
    background-size:cover;
-    width: 16%;
-    height:80%;
+    width: 76px;
+    height:65px;
     cursor: pointer;
-    
+     background-color: #ffffff;
+    border: none;
     
 }
-button2 {
+#btn-comida-2 {
     display: inline;
     background-image:url("/assets/images/btn-fish.png") ;
    background-size:cover;
-    width: 16%;
-    height:80%;
+   width: 76px;
+    height:65px;
     cursor: pointer;
-    
+     background-color: #ffffff;
+    border: none;
     
 }
-button3 {
+#btn-comida-3 {
     display: inline;
     background-image:url("/assets/images/btn-meat.png") ;
    background-size:cover;
-    width: 16%;
-    height:80%;
+  width: 76px;
+    height:65px;
     cursor: pointer;
-    
+     background-color: #ffffff;
+    border: none;
     
 }
-button4 {
+#btn-comida-4 {
     display: inline;
     background-image:url("/assets/images/btn-vegie.png") ;
    background-size:cover;
-    width: 16%;
-    height:80%;
+   width: 76px;
+    height:65px;
     cursor: pointer;
-    
+     background-color: #ffffff;
+    border: none;
     
 }
-button5 {
+#btn-comida-5 {
     display: inline;
     background-image:url("/assets/images/btn-fruit.png") ;
    background-size:cover;
-    width: 16%;
-    height:80%;
+ width: 76px;
+    height:65px;
     cursor: pointer;
-    
+     background-color: #ffffff;
+    border: none;
     
 }
-button6 {
+#btn-comida-6 {
     display: inline;
     background-image:url("/assets/images/btn-coctel.png") ;
    background-size:cover;
-    width: 16%;
-    height:80%;
+ width: 76px;
+    height:65px;
     cursor: pointer;
+    background-color: #ffffff;
+    border: none;
     
     
 }
@@ -589,7 +617,7 @@ button6 {
 
     .pasos p {
         width: 95%;
-        font-family: "Nunito Sans", sans-serif;
+        font-family:"Lato", sans-serif;
         font-size: 16px;
         line-height:1.4em ;
 
@@ -597,7 +625,7 @@ button6 {
 
      .pasos1 p {
         width: 85%;
-        font-family: "Nunito Sans", sans-serif;
+        font-family: "Lato", sans-serif;
         font-size: 16px;
         line-height: 1.4em;
 
@@ -623,11 +651,264 @@ li{
     line-height: 1.4em;
     text-decoration: none;
     list-style-type: none;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 14px;
 }
 
 
+/*here star our team*/
+/*here start box team*/
+.team-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: inherit;
+   
+}
+
+#output8 img {
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 15px;
+    border-color:#f2f1f1 ;
+    
+}
+
+.team-box h2 {
+            font-size: 25px;
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        color: #ff6666;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+}
+.profile-container{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+    width: 85%;
+    min-height: 200px;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    background-color: #ffffff;
+    
+}
+
+#demo p ul li {
+    
+    color: rgb(216, 58, 58);
+    font-family: "Lato", sans-serif;
+    font-size: medium;
+    
+}
+
+#demo {
+    background-color: #fefefe;
+    
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: inherit;
+    border-radius: 30px;
+    color: rgb(55, 55, 55);
+    margin-top: 0px;
+    font-family: "Lato", sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+#demo img{
+   
+   border: none;
+    margin-left: auto;
+    margin-left: auto;
+    margin-top: 20px;
+
+   
+   
+    
+}
+
+#demo2 img{
+   
+    border-radius: 12px;
+    border: #ededed;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    
+}
+
+
+#demo3 img{
+   
+    border-radius: 12px;
+    border: #ededed;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    
+}
+
+
+#demo4 img{
+   
+    border-radius: 12px;
+    border: #ededed;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    
+}
+
+#demo2 {
+    
+background-color: #fefefe;
+    
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: inherit;
+    border-radius: 30px;
+    color: rgb(55, 55, 55);
+    margin-top: 0px;
+    font-family: "Lato", sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#demo3 {
+    
+  background-color: #fefefe;
+    
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: inherit;
+    border-radius: 30px;
+    color: rgb(55, 55, 55);
+    margin-top: 0px;
+    font-family:"Lato", sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#demo4 {
+    
+background-color: #fefefe;
+    
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: inherit;
+    border-radius: 30px;
+    color: rgb(55, 55, 55);
+    margin-top: 0px;
+    font-family: "Lato", sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+#box-caja-d {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    gap: 20px;
+    width: 100%;
+}
+
+
+
+
+
+#imagen {
+    background-color: chocolate;
+    border-style: none;
+    border: none;
+}
+
+#imagen2 {
+    background-color: chocolate;
+    border: none;
+}
+#imagen3 {
+    background-color: chocolate;
+    border: none;
+}
+#imagen4 {
+    background-color: chocolate;
+    border: none;
+}
+
+#firstchef {
+   
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    background-color: #ffffff;
+   
+   
+
+}
+
+#firstbtnImg {
+    width: 100px;
+    height: 100px;
+   
+}
+
+#firstchef h1 {
+    font-family:"Lato", sans-serif;
+    font-size: 22px;
+    color: #333333;
+
+
+}
+
+.boxinfo-chef {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    width: 95%;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.boxinfo-chef  h1{
+color: #ff6666;
+    
+}
+
+.boxinfo-chef  h3{
+color: #ff6666;
+ font-size: 18px;
+ margin: 0px;
+
+}
+
+/*here star footer*/
 
 .grid-container-footer {
     
@@ -704,10 +985,7 @@ footer {
 
 }/*end Small devices ( up to 600px wide) */
 
-
-
-
-@media (min-width: 601px) {
+@media (min-width: 641px) {
 .container {
 width: 100%;
 padding: 10px 0px;
@@ -724,8 +1002,8 @@ width: 158px;
 height: 45px;
 margin-top: 30px;
 margin-bottom: 0px;
-margin-left: 10px;
-margin-right: 50px;
+margin-left: 0px;
+margin-right: 0px;
 }
 
 header {
@@ -740,25 +1018,28 @@ margin-bottom:40px;
 
 .topnav {
 display: flex;
-column-gap: 40px;
+gap: 0px;
 overflow: hidden;
 background-color: #ffffff;
-padding-top: 40px;
+padding-top: 45px;
+font-family: "Lato", sans-serif;
+
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #000000;
+  color:#ff6666;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color:#ff6666;
+  border-radius: 12px;
+  color: rgb(255, 255, 255);
 }
 
 .topnav a.active {
@@ -952,12 +1233,14 @@ box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4);
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-align-content: flex-start;
+justify-content: space-between;
 text-align: justify;
-gap: 55px;
+gap: 25px;
 margin-right: auto;
 margin-left: auto;
 width: 90%;
+
+
 }
 
 .box-five{
@@ -1058,14 +1341,969 @@ text-decoration: none;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: flex-start;
+justify-content: center;
 gap: 30px;
 width: 90%;
 height: auto;
 text-align: left;
 margin-left: auto;
 margin-right: auto;
-margin-bottom: 40px;
+margin-bottom: 0px;
+margin-top: 80px;
+}
+
+.img-box-text-welcome{
+
+height: inherit;
+text-align: left;
+}
+
+
+.text-welcome {
+width: 90%;
+min-height: 200px;
+text-align: left;
+margin-top: 20px;
+
+}
+
+.box-text-welcome h3{
+font-family:"Lato", sans-serif;
+font-size: 18px;
+font-weight: 300;
+color: #151515;
+line-height: normal;
+}
+
+
+.box-text-welcome h1{
+font-family:"Lato", sans-serif;
+font-size: 20px;
+font-weight: 500;
+color:#ff6666;
+line-height: normal;
+}
+
+/* end welcome*/
+
+#containerreceta {
+        display: grid; /* Make this a grid container and all direct children grid items */
+        grid-template-columns: 100%; /* 2 rows, each 50px high */
+        grid-template-areas: "text1"
+                        "gallery";
+
+        
+        text-align: center;
+        width: 95%;
+        margin-top: 0px;
+        padding-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        
+       
+    }
+
+    
+
+.text1 {
+    font-size: 15px;
+    color: #333333;
+    text-align: justify;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    
+}
+
+    .logito {
+        
+        width: 30px;
+        height: 30px;
+        float: right;
+        margin-right: 10px;
+        margin-left:0px;
+        padding-top: 0px;
+        margin-top: 10px;
+        
+    }
+
+    .text1 ul li {
+        font-size: 16px;
+        margin: 0px 0px;
+        padding: 0px 0px;
+        line-height: 1.4em;
+        font-family: "Lato", sans-serif;
+        text-decoration: none;
+
+    }
+
+    .gallery {
+        display: none;
+        
+    }
+
+    .gallery2 {
+    width: 100%;
+    }
+
+    .gallery img{
+        display: none;
+
+    
+        
+    }
+
+     .gallery2 img{
+         
+ 
+
+        margin-bottom: 40px;
+        margin-top: 0px;
+        margin-left: 0px;
+       
+        
+
+    
+        
+    }
+
+    .containerreceta h1 {
+        color:#cc6666;
+        font-size: 25px;
+        margin-left: 20px;
+        
+    }
+
+     .containerreceta h2 {
+        color:rgb(255, 255, 255);
+        font-size: 19px;
+    }
+     .containerreceta h3 {
+        color:rgb(255, 255, 255);
+        font-size: 15px;
+    }
+
+     .box-recipes-title {
+            width: 90%;
+            height: auto;
+            text-align: left;
+            padding-left: 35px;
+            margin-bottom: 0px;
+            margin-top: 50px;
+            
+           
+        }
+
+         .box-recipes-title h2 {
+           font-size: 25px;
+           font-family: "Lato", sans-serif;
+           font-weight: 500;
+           color:#ff6666;
+           
+        }
+
+.top5title {
+width: 100%;
+height: 30px;
+text-align: left;
+margin-top: 20px;
+
+}
+
+.top5title h1{
+font-family:"Lato", sans-serif;
+font-size: 20px;
+font-weight: 500;
+color:#ff6666;
+line-height: normal;
+}
+
+.box-button{
+   display: none;
+    
+    
+} 
+
+.box-button2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    width: 90%;
+    height: 92px;
+    justify-content:center;
+    gap: 5px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+} 
+
+#btn-comida-1  {
+    display: inline;
+    background-image:url("/assets/images/btn-italian.png") ;
+   background-size:cover;
+    width: 91px;
+    height:78px;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+}
+#btn-comida-2 {
+    display: inline;
+    background-image:url("/assets/images/btn-fish.png") ;
+   background-size:cover;
+     width: 91px;
+    height:78px;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+}
+#btn-comida-3 {
+    display: inline;
+    background-image:url("/assets/images/btn-meat.png") ;
+   background-size:cover;
+    width: 91px;
+    height:78px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+}
+#btn-comida-4  {
+    display: inline;
+    background-image:url("/assets/images/btn-vegie.png") ;
+   background-size:cover;
+    width: 91px;
+    height:78px;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+    
+}
+#btn-comida-5 {
+    display: inline;
+    background-image:url("/assets/images/btn-fruit.png") ;
+   background-size:cover;
+     width: 91px;
+    height:78px;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+    
+}
+#btn-comida-6 {
+    display: inline;
+    background-image:url("/assets/images/btn-coctel.png") ;
+   background-size:cover;
+     width: 91px;
+    height:78px;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+    
+}
+
+
+
+    .pasos p {
+        width: 95%;
+        font-family:"Lato", sans-serif;
+        font-size: 16px;
+        line-height:1.4em ;
+
+    }
+
+     .pasos1 p {
+        width: 100%;
+        font-family:"Lato", sans-serif;
+        font-size: 16px;
+        line-height: 1.4em;
+
+    }
+/*here start box team*/
+.team-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: inherit;
+   
+}
+
+#output8 img {
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 15px;
+    border-color:#f2f1f1 ;
+    
+}
+
+.team-box h2 {
+            font-size: 25px;
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        color: #ff6666;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+}
+.profile-container{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+    width: 65%;
+    min-height: 200px;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    background-color: #ffffff;
+    
+}
+
+#demo p ul li {
+    
+    color: rgb(216, 58, 58);
+    font-family: "Lato", sans-serif;
+    font-size: medium;
+    
+}
+
+#demo {
+    background-color: #fefefe;
+    
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: inherit;
+    border-radius: 30px;
+    color: rgb(55, 55, 55);
+    margin-top: 0px;
+    font-family: "Lato", sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+#demo img{
+   
+   border: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+
+   
+   
+    
+}
+
+#demo2 img{
+   
+    border-radius: 12px;
+    border: #ededed;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    
+}
+
+
+#demo3 img{
+   
+    border-radius: 12px;
+    border: #ededed;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    
+}
+
+
+#demo4 img{
+   
+    border-radius: 12px;
+    border: #ededed;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    
+}
+
+#demo2 {
+    
+background-color: #fefefe;
+    
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: inherit;
+    border-radius: 30px;
+    color: rgb(55, 55, 55);
+    margin-top: 0px;
+    font-family: "Lato", sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#demo3 {
+    
+  background-color: #fefefe;
+    
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: inherit;
+    border-radius: 30px;
+    color: rgb(55, 55, 55);
+    margin-top: 0px;
+    font-family: "Lato", sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#demo4 {
+    
+background-color: #fefefe;
+    
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: inherit;
+    border-radius: 30px;
+    color: rgb(55, 55, 55);
+    margin-top: 0px;
+    font-family: "Lato", sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+#box-caja-d {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    gap: 20px;
+    width: 100%;
+}
+
+
+
+
+
+#imagen {
+    background-color: chocolate;
+    border-style: none;
+    border: none;
+}
+
+#imagen2 {
+    background-color: chocolate;
+    border: none;
+}
+#imagen3 {
+    background-color: chocolate;
+    border: none;
+}
+#imagen4 {
+    background-color: chocolate;
+    border: none;
+}
+
+#firstchef {
+   
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    background-color: #ffffff;
+   
+   
+
+}
+
+#firstbtnImg {
+    width: 100px;
+    height: 100px;
+   
+}
+
+#firstchef h1 {
+    font-family: "Lato", sans-serif;
+    color: #333333;
+
+
+}
+
+.boxinfo-chef {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    width: 95%;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.boxinfo-chef  h1{
+color: #ff6666;
+    
+}
+
+.boxinfo-chef  h3{
+color: #ff6666;
+ font-size: 18px;
+ margin: 0px;
+
+}
+
+
+/*here start footer*/
+.grid-container-footer > button {
+   display: grid;
+   place-items: center;
+    
+}
+
+.grid-container-footer {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas:
+ "footer footer footer footer";
+  min-height: 35vh;
+  background-color:#cc6666;
+}
+
+
+footer {
+  grid-area: footer;
+  margin-top: 40px;
+}
+
+
+
+.grid-container-footer > footer {
+  display: grid;
+  place-items: center;
+}
+
+.follow {
+   
+    display: none;
+}
+.follow2 {
+   
+    width: 65px;
+    height: 65px;
+}
+
+.youtub {
+    display: none;
+}
+
+.youtub2 {
+    width: 40px;
+    height: 40px;
+}
+
+.designby {
+    width: 190px;
+    height: 50px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#reci{
+   width: 10px;
+   height: 10px;
+}
+
+#contacto{
+   width: 10px;
+   height: 10px;
+}
+
+} /* end tablet devices ( big 600px wide) */
+
+
+
+@media (min-width: 1008px) {
+
+.container {
+width: 100%;
+padding: 10px 0px;
+
+       
+}
+
+.logoup {
+display: none;
+}
+
+.logoup2 {
+width: 158px;
+height: 45px;
+margin-top: 30px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+header {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+column-gap: 0px;
+margin-bottom:40px;
+}
+
+.topnav {
+display: flex;
+column-gap: 40px;
+overflow: hidden;
+background-color: #ffffff;
+padding-top: 45px;
+font-family: "Lato", sans-serif;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color:#ff6666;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:#ff6666;
+  border-radius: 12px;
+  color: rgb(255, 255, 255);
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+form {
+  max-width: 480px;
+  margin: 0 ;
+  padding: 0px;
+  }
+
+
+legend {
+  display: block;
+  font-weight: bold;
+}
+
+fieldset {
+    display: block;
+    margin-top: 10px;
+    margin-inline: 12px;
+    border-width: 2px;
+    border-style: none;
+    color: #ffffff;
+    font-weight: 200;
+   }
+
+        /* Modal Overlay */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(37, 71, 152, 0.4);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Modal Container */
+        .modal-container {
+            background: #cc6666;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            max-width: 480px;
+            width: 100%;
+            margin: 20px;
+            position: relative;
+            transform: scale(0.9) translateY(20px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            padding: 20px;
+        }
+
+         .modal-container2 {
+          display: none;
+            
+            
+        }
+
+        
+
+        /* Close Button */
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 25px;
+            height: 25px;
+            background: #f1f5f9;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            z-index: 10;
+            
+            
+        }
+
+        .close-btn:hover {
+            background: #e2e8f0;
+            transform: scale(1.1);
+            
+        }
+
+        .close-btn::before,
+        .close-btn::after {
+            content: "\2A09";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 1px;
+            
+            color: #000;
+        }
+
+       
+
+.cajanombre {
+width: 95%;
+padding: 12px 15px;
+border: 2px solid #e2e8f0;
+border-radius: 12px;
+font-size: 1rem;
+font-family: inherit;
+background: #ffffff;
+position: relative;
+}
+       
+label{
+margin-top: 10px;
+margin-bottom: 5px;
+display: block;
+color: #ffffff;
+}
+
+/*  button que da la accion */
+
+      
+.demo-content {
+padding-top: 55px;
+text-align: center;
+max-width: 160px;
+margin-bottom: 0px;
+}
+
+.register-btn {
+background-color: #ffffff;
+color: #333333;
+border: none;
+font-size: 1rem;
+font-weight: 400;
+font-family: 'Space Grotesk', sans-serif;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+transform: translateY(-2px);
+}
+
+.submit-btn {
+width: 100%;
+margin-top: 10px;
+background-color:#ffffff;
+color: rgb(0, 0, 0);
+border: none;
+padding: 13px 14px;
+border-radius: 12px;
+font-size: 1rem;
+font-weight: 400;
+font-family: inherit;
+cursor: pointer;
+transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+position: relative;
+overflow: hidden;
+transform-origin: center;
+}
+
+.submit-btn:hover {
+transform: translateY(-3px) scale(1.02);
+box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/*here is top5 container*/
+
+#box-top5{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+text-align: justify;
+gap: 25px;
+margin-right: auto;
+margin-left: auto;
+width: 90%;
+
+
+}
+
+.box-five{
+width: 30%;
+padding-right: 0px;
+padding-left: 0px;
+ 
+ 
+  
+}
+
+.box-textfive{
+width: 100%;
+flex:1;
+padding-right: 0px;
+padding-left: 0px;
+}
+
+.box-textfive h3{
+flex:1;
+padding-right: 0px;
+padding-left: 5px;
+overflow-wrap: break-word;
+font-weight: 300;
+}
+
+.img-boxfive{
+    
+    width: 100%;
+    height: auto;
+    
+}
+
+.img-boxfive img{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.container-infotop5{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+
+.info-boxfive {
+display: flex;
+width: 100%;
+flex:1;
+padding-right: 0px;
+padding-left: 0px;
+}
+
+.info-boxfive h3 {
+flex:1;
+padding-right: 0px;
+padding-left: 5px;
+overflow-wrap: break-word;
+font-weight: 400;
+text-align: left;
+}
+
+.checked {
+  color: orange;
+}
+
+
+
+.btn-more {
+    width: 30px;
+    height: 20%;
+    background-color: #ff6666;
+    border: #cccccc;
+    border-radius: 8px;
+    color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right;
+    text-align: center;
+    
+
+}
+
+.btn-more a {
+color: #ffffff; 
+cursor: pointer;
+text-decoration: none;
+}
+
+/*here end top5 container*/
+
+
+.box-text-welcome{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+gap: 40px;
+width: 100%;
+
+text-align: left;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 50px;
 margin-top: 80px;
 }
 
@@ -1078,13 +2316,14 @@ text-align: left;
 
 .text-welcome {
 width: 50%;
+max-width: 80%;
 height: 300px;
 text-align: left;
 margin-top: 20px;
 }
 
 .box-text-welcome h3{
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-family:"Lato", sans-serif;
 font-size: 18px;
 font-weight: 300;
 color: #151515;
@@ -1093,7 +2332,7 @@ line-height: normal;
 
 
 .box-text-welcome h1{
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-family:"Lato", sans-serif;
 font-size: 20px;
 font-weight: 500;
 color:#ff6666;
@@ -1104,14 +2343,16 @@ line-height: normal;
 
 #containerreceta {
         display: grid; /* Make this a grid container and all direct children grid items */
-        grid-template-columns: repeat(2,0.5fr); /* 2 rows, each 50px high */
+        grid-template-columns: repeat(2,1fr); /* 2 rows, each 50px high */
         grid-template-areas: "text1"
                         "gallery";
 
         text-align: left;
-        width: 100%;
+        width: 90%;
         margin-top: 40px;
-        padding-left: 55px;
+        padding-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
        
     }
 
@@ -1121,7 +2362,7 @@ line-height: normal;
        
         font-size: 20px;
         color: #333333;
-       
+      
         border-radius: 30px;
         padding-left: 15px;
         padding-right: 15px;
@@ -1147,7 +2388,7 @@ line-height: normal;
         margin: 0px 0px;
         padding: 0px 0px;
         line-height: 1.4em;
-        font-family: "Nunito Sans", sans-serif;
+        font-family:"Lato", sans-serif;
         text-decoration: none;
 
     }
@@ -1170,9 +2411,10 @@ line-height: normal;
 
      .gallery2 img{
         
-        position: absolute;
+        
         margin-top: 20px;
-        margin-left: 65px;
+        margin-left: 0px;
+        float: right;
 
     
         
@@ -1206,9 +2448,20 @@ line-height: normal;
 
          .box-recipes-title h2 {
            font-size: 25px;
-           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-family: "Lato", sans-serif;
            font-weight: 500;
            color:#ff6666;
+           
+        }
+
+         .box-recipes-title p {
+           font-size: 19px;
+           font-family: "Lato", sans-serif;
+           font-weight: 300;
+           color: #151515;
+        line-height: normal;
+        text-align: center;
+        
            
         }
 
@@ -1221,8 +2474,7 @@ margin-top: 20px;
 }
 
 .top5title h1{
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 20px;
+font-family:"Lato", sans-serif;
 font-weight: 500;
 color:#ff6666;
 line-height: normal;
@@ -1238,72 +2490,79 @@ line-height: normal;
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
-    width: 47%;
+    width: 90%;
     height: 92px;
-    justify-content: space-between;
-    align-content: flex-start;
+    justify-content:flex-start;
+    gap: 5px;
     margin-bottom: 15px;
-    margin-left: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
 } 
 
-button1 {
+#btn-comida-1 {
     display: inline;
     background-image:url("/assets/images/btn-italian.png") ;
    background-size:cover;
-    width: 98px;
-    height:84px;
+    width: 91px;
+    height:78px;
     cursor: pointer;
+     border: none;
     
     
 }
-button2 {
+#btn-comida-2 {
     display: inline;
     background-image:url("/assets/images/btn-fish.png") ;
    background-size:cover;
-    width: 98px;
-    height:84px;
+     width: 91px;
+    height:78px;
     cursor: pointer;
+     border: none;
     
     
 }
-button3 {
+#btn-comida-3{
     display: inline;
     background-image:url("/assets/images/btn-meat.png") ;
    background-size:cover;
-    width: 98px;
-    height:84px;
+    width: 91px;
+    height:78px;
     cursor: pointer;
+     border: none;
     
     
 }
-button4 {
+#btn-comida-4 {
     display: inline;
     background-image:url("/assets/images/btn-vegie.png") ;
    background-size:cover;
-   width: 98px;
-    height:84px;
+    width: 91px;
+    height:78px;
     cursor: pointer;
+     border: none;
     
     
 }
-button5 {
+#btn-comida-5{
     display: inline;
     background-image:url("/assets/images/btn-fruit.png") ;
    background-size:cover;
-    width: 98px;
-    height:84px;
+     width: 91px;
+    height:78px;
     cursor: pointer;
+    border: none;
     
     
 }
-button6 {
+#btn-comida-6{
     display: inline;
     background-image:url("/assets/images/btn-coctel.png") ;
    background-size:cover;
-    width: 98px;
-    height:84px;
+     width: 91px;
+    height:78px;
     cursor: pointer;
-    
+     border: none;
     
 }
 
@@ -1311,17 +2570,19 @@ button6 {
 
     .pasos p {
         width: 95%;
-        font-family: "Nunito Sans", sans-serif;
+        font-family: "Lato", sans-serif;
         font-size: 16px;
         line-height:1.4em ;
+       
 
     }
 
      .pasos1 p {
-        width: 85%;
-        font-family: "Nunito Sans", sans-serif;
+        width: 100%;
+        font-family: "Lato", sans-serif;
         font-size: 16px;
         line-height: 1.4em;
+        
 
     }
 
@@ -1391,4 +2652,8 @@ footer {
    height: 10px;
 }
 
+
+
 }/*end desktop devices ( big 600px wide) */
+
+
