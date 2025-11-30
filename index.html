@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="./css/style.css"/>
@@ -27,11 +30,11 @@
 
 <div class="topnav" id="myTopnav">
   <a href="#home" >Home</a>
-  <a href="#box-top5">Top5Best</a>
-  <a href="#reci">Recipes</a>
-  <a href="#contacto">Contact</a>
+  <a href="#box-top5">Recipes</a>
+  <a href="#reci">Top6Best</a>
+  <a href="#contacto">OurTeam</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunctionbtn()">
-    <i class="fa fa-bars"></i></a>
+  <i class="fa fa-bars"></i></a>
 </div><!--end topnav-mytopnav-->
 
 
@@ -93,11 +96,8 @@
     </div>
     
     <div class="text-welcome">
-    <h1>WE ARE</h1>
-<h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod eaque quia fugit a! Aut tempora ut 
-accusantium provident obcaecati voluptatibus sunt ullam repudiandae, excepturi quam iste labore ipsum fuga?
-accusantium provident obcaecati voluptatibus sunt ullam repudiandae, excepturi quam iste labore ipsum fuga?
-accusantium provident obcaecati voluptatibus sunt ullam repudiandae, excepturi quam iste labore ipsum fuga?</h3>
+    <h1>WHO WE ARE</h1>
+<h3>We are a collective of professional chefs who believe great food shouldn't be reserved for restaurants. We created this platform to bridge the gap between culinary expertise and your busy weeknight kitchen. We specialize in stripping back complications to offer recipes that are quick, accessible, and delicious. If you’re overwhelmed by choice, trust our palates—check out our curated list of six chef-selected favorites.</h3>
 </div><!--end text-welcome-->
 </div><!--end box-text-welcome-->
 
@@ -224,9 +224,8 @@ accusantium provident obcaecati voluptatibus sunt ullam repudiandae, excepturi q
 <div id="reci"></div><!--only to call the btn-->
 <div class="box-recipes-title">
 <h2>THE TOP 6 OF THE WEEK</h2>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati dolores doloribus. <br>
-  Voluptas mollitia beatae sequi cum exercitationem molestias quae perferendis alias <br>sunt, ut ipsa, 
-  nihil nobis praesentium corporis cumque!</p>
+<p>This is the cream of the crop. Every week, our culinary team reviews our library to bring you a fresh rotation<br>
+   of must-try dishes. These aren't just simple recipes; they are the six most delicious, reliable,<br>and chef-approved meals you can make this week.</p>
 </div>
 <div class="box-button">
 <button id="btn-comida-1" onclick="getlacomidaDeMama(1)"></button1>
@@ -253,8 +252,8 @@ accusantium provident obcaecati voluptatibus sunt ullam repudiandae, excepturi q
 <p id="output4"></p>
 <div id="output7"></div>
 
-<div class="gallery">
-    <img src="./assets/images/img-empanada.png" alt="ese soy yo mirando a la camara" >
+<div id="output9" class="gallery">
+   <!-- <img src="./assets/images/img-empanada.png" alt="ese soy yo mirando a la camara" >-->
 </div><!--end gallery-->
 </div><!--end-text1-->
 
@@ -319,31 +318,24 @@ accusantium provident obcaecati voluptatibus sunt ullam repudiandae, excepturi q
          </div><!--end modal container2-->
 
 <div class="team-box">
-  <h2>RECIPES</h2>
+  <h2>OUR TEAM</h2>
 <div id="box-caja-d">
     
 
-<button id="firstchef" onclick="getElementById('demo').innerHTML ='<h3>nombre:</h3> '+ perfiles[0].nombre + '<br>' + '<h3>Edad: </h3>'+ perfiles[0].edad + '<br>' + '<h3>Ciudad:</h3> '+ perfiles[0].ciudad + '<br>' + '<h3>informacion:</h3> '+ perfiles[0].descripcion +'<img src=&quot;' + perfiles[0].imageURl + '&quot; alt=&quot;Foto de perfil&quot; style=&quot;width:200px;&quot;>' "><div id="firstbtnImg"><img src="./assets/images/chef1.png" alt="img chef1" width="100px"></div></button>
-<button id="firstchef" onclick="getElementById('demo2').innerHTML ='nombre: '+ perfiles[1].nombre + '<br>' + 'Edad: '+ perfiles[1].edad + '<br>' + 'Ciudad: '+ perfiles[1].ciudad + '<br>' + 'informacion: '+ perfiles[1].descripcion +'<img src=&quot;' + perfiles[1].imageURl + '&quot; alt=&quot;Foto de perfil&quot; style=&quot;width:200px;&quot;>'"><div id="firstbtnImg"><img src="./assets/images/chef1.png" alt="img chef1" width="100px"></div></button>
-<button id="firstchef" onclick="getElementById('demo3').innerHTML ='nombre: '+ perfiles[2].nombre + '<br>' + 'Edad: '+ perfiles[2].edad + '<br>' + 'Ciudad: '+ perfiles[2].ciudad + '<br>' + 'informacion: '+ perfiles[2].descripcion +'<img src=&quot;' + perfiles[2].imageURl + '&quot; alt=&quot;Foto de perfil&quot; style=&quot;width:200px;&quot;>'"><div id="firstbtnImg"><img src="./assets/images/chef1.png" alt="img chef1" width="100px"></div></button>
-<button id="firstchef" onclick="getElementById('demo4').innerHTML ='nombre: '+ perfiles[3].nombre + '<br>' + 'Edad: '+ perfiles[3].edad + '<br>' + 'Ciudad: '+ perfiles[3].ciudad + '<br>' + 'informacion: '+ perfiles[3].descripcion +'<img src=&quot;' + perfiles[3].imageURl + '&quot; alt=&quot;Foto de perfil&quot; style=&quot;width:200px;&quot;>' "><div id="firstbtnImg"><img src="./assets/images/chef1.png" alt="img chef1" width="100px"></div></button>
+<button id="firstchef" onclick="getElementById('demo').innerHTML ='<h3>Name:</h3> '+ perfiles[0].nombre + '<br>' + '<h3>Age: </h3>'+ perfiles[0].edad + '<br>' + '<h3>City:</h3> '+ perfiles[0].ciudad + '<br>' + '<h3>Information:</h3> '+ perfiles[0].descripcion +'<img src=&quot;' + perfiles[0].imageURl + '&quot; alt=&quot;Foto de perfil&quot; style=&quot;width:300px;&quot;>' "><div id="firstbtnImg"><img src="./assets/images/chef1.png" alt="img chef1" width="100px"></div></button>
+<button id="firstchef" onclick="getElementById('demo').innerHTML ='<h3>Name:</h3> '+ perfiles[1].nombre + '<br>' + '<h3>Age: </h3>'+ perfiles[1].edad + '<br>' + '<h3>City:</h3> '+ perfiles[1].ciudad + '<br>' + '<h3>Information:</h3> '+ perfiles[1].descripcion +'<img src=&quot;' + perfiles[1].imageURl + '&quot; alt=&quot;Foto de perfil&quot; style=&quot;width:300px;&quot;>' "><div id="firstbtnImg"><img src="./assets/images/chef2.png" alt="img chef1" width="100px"></div></button>
+<button id="firstchef" onclick="getElementById('demo').innerHTML ='<h3>Name:</h3> '+ perfiles[2].nombre + '<br>' + '<h3>Age: </h3>'+ perfiles[2].edad + '<br>' + '<h3>City:</h3> '+ perfiles[2].ciudad + '<br>' + '<h3>Information:</h3> '+ perfiles[2].descripcion +'<img src=&quot;' + perfiles[2].imageURl + '&quot; alt=&quot;Foto de perfil&quot; style=&quot;width:300px;&quot;>' "><div id="firstbtnImg"><img src="./assets/images/chef3.png" alt="img chef1" width="100px"></div></button>
+<button id="firstchef" onclick="getElementById('demo').innerHTML ='<h3>Name:</h3> '+ perfiles[3].nombre + '<br>' + '<h3>Age: </h3>'+ perfiles[3].edad + '<br>' + '<h3>City:</h3> '+ perfiles[3].ciudad + '<br>' + '<h3>Information:</h3> '+ perfiles[3].descripcion +'<img src=&quot;' + perfiles[3].imageURl + '&quot; alt=&quot;Foto de perfil&quot; style=&quot;width:300px;&quot;>' "><div id="firstbtnImg"><img src="./assets/images/chef4.png" alt="img chef1" width="100px"></div></button>
 </div><!--fin box-caja-d-->
 
 <div class="boxinfo-chef">
-<div class="cajademo">
+<div class="profile-container">
 <p id="demo" >
+</p>
 <div id="imagen">
-</div></p>
 </div>
-<div class="cajademo">
-<p id="demo2" ></p>
 </div>
-<div class="cajademo">
-<p id="demo3"></p>
-</div>
-<div class="cajademo">
-<p id="demo4" ></p>
-</div>
+
   </div> <!--end boxinfo-chef--> 
   
 
